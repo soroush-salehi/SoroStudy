@@ -56,3 +56,15 @@ input::placeholder,textarea::placeholder{color:#9aa6b8!important}
 ::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-thumb{background:#c7d1df;border-radius:10px}::-webkit-scrollbar-track{background:transparent}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 
+
+
+/* Product refinement · SoroStudy */
+:root{--product-accent:#4779df;--product-ink:#18243a;--product-muted:#68758b;--product-line:#e4eaf2;--product-shadow:0 18px 48px rgba(29,48,78,.09)}
+body{color:var(--product-ink)!important;background:radial-gradient(ellipse at 10% 0%,color-mix(in srgb,var(--product-accent) 9%,transparent),transparent 35%),linear-gradient(180deg,#fbfcff,#f3f6fb)!important}
+h1,h2,h3,h4{letter-spacing:-.045em!important}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid color-mix(in srgb,var(--product-accent) 35%,white);outline-offset:2px}
+button.primary,.primary,.send{background:linear-gradient(125deg,var(--product-accent),color-mix(in srgb,var(--product-accent) 72%,#273c69))!important;color:#fff!important;border:0!important}
+input,textarea,select{border:1px solid var(--product-line)!important;border-radius:12px!important;background:#fff!important;color:var(--product-ink)!important}
+.panel,.window,.preview,.composer,.stat,.tasks,.file,.editor,.side,.dock{border:1px solid var(--product-line)!important;box-shadow:var(--product-shadow)!important}
+.pill{background:color-mix(in srgb,var(--product-accent) 10%,white)!important;color:var(--product-accent)!important;border:1px solid color-mix(in srgb,var(--product-accent) 20%,white)!important}
+@media(max-width:760px){.wrap,.shell,.app{width:min(100% - 24px,100%)!important;margin-inline:auto!important}.grid{grid-template-columns:1fr!important}.work{grid-template-columns:1fr!important}.editors,.preview{min-width:0!important}.controls{flex-wrap:wrap}.desktop .icons{gap:12px}.window{max-width:calc(100vw - 24px)!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
