@@ -1,28 +1,42 @@
 # SoroStudy
 
-> A free-first study and learning workspace.
+> A calm, local-first study dashboard.
 
-A lightweight study platform for planning sessions, tracking focus time, organizing subjects, and reviewing progress. Built to work as a responsive web app and evolve into a PWA.
+Track focus sessions and tasks with a lightweight study workspace. Data is saved in localStorage on this device; there is no account or cloud sync in this release.
 
-## Technology
+## Features
 
-HTML, CSS, Vanilla JavaScript; PHP 8.3 and MariaDB planned for persistence.
+- Start, pause and reset a focus timer
+- Create and complete study tasks
+- Daily focus total
+- Local persistence with no account
 
-## Roadmap
+## Tech stack
 
-- [ ] Responsive dashboard
-- [ ] Study timer
-- [ ] Subject and task management
-- [ ] Progress summaries
-- [ ] PWA support
+HTML, CSS and vanilla JavaScript
 
-## Project status
+## Run locally
 
-Early development. Features are added incrementally and documented as they become available.
+Open `index.html` in a modern browser.
 
-## Contributing
+## Scope and limitations
 
-Issues and focused pull requests are welcome. Please describe the problem, expected behavior, and steps to reproduce bugs.
+Local browser storage only. Clearing site data removes saved tasks and totals.
+
+## Project structure
+
+```
+SoroStudy/
+├── index.html   # self-contained interface and application logic
+└── README.md    # overview, setup and scope
+```
+
+## Development principles
+
+- Keep the interface accessible, responsive and dependency-light.
+- Prefer clear, readable code over unnecessary abstractions.
+- Never commit credentials, private data or generated user files.
+- Document limitations honestly and add tests as the project grows.
 
 ## License
 
