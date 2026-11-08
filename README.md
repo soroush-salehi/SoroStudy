@@ -1,43 +1,22 @@
 # SoroStudy
 
-> A calm, local-first study dashboard.
-
-Track focus sessions and tasks with a lightweight study workspace. Data is saved in localStorage on this device; there is no account or cloud sync in this release.
+A calm, local-first study dashboard.
 
 ## Features
+- 25-minute focus timer with pause and reset
+- Study task list
+- Daily focus-time total
+- Local browser persistence
 
-- Start, pause and reset a focus timer
-- Create and complete study tasks
-- Daily focus total
-- Local persistence with no account
-
-## Tech stack
-
-HTML, CSS and vanilla JavaScript
-
-## Run locally
-
+## Run
 Open `index.html` in a modern browser.
 
-## Scope and limitations
+## Scope
+Data stays in this browser using localStorage. There is no account, cloud sync or backend in this prototype. Clearing site data removes saved progress.
 
-Local browser storage only. Clearing site data removes saved tasks and totals.
-
-## Project structure
-
-```
-SoroStudy/
-├── index.html   # self-contained interface and application logic
-└── README.md    # overview, setup and scope
-```
-
-## Development principles
-
-- Keep the interface accessible, responsive and dependency-light.
-- Prefer clear, readable code over unnecessary abstractions.
-- Never commit credentials, private data or generated user files.
-- Document limitations honestly and add tests as the project grows.
+## Structure
+- `index.html` — dashboard and application logic
+- `README.md` — project documentation
 
 ## License
-
-No license has been selected yet. Until a license is added, all rights are reserved by the copyright holder.
+No license selected. All rights reserved until a license is added.
