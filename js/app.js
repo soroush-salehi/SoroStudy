@@ -28,7 +28,7 @@ function render() {
   $("#clock").textContent = format(remaining);
   $("#total").textContent = Math.floor(data.totalSeconds / 60) + " min";
   const today = data.daily[todayKey()] || 0;
-  $("#state").dataset.today = Math.floor(today / 60) + " min studied today";
+  $("#todayStats").textContent = Math.floor(today / 60) + " min studied today";
   $("#list").replaceChildren();
   data.tasks.forEach((task, index) => {
     const li = document.createElement("li");
